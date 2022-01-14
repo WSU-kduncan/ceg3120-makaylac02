@@ -48,12 +48,18 @@
 ## git files & folders
 
 - .git folder
+  - Holds all information on commits and project history
 - .gitignore file
+  - Specifies intentionally untracked files to ignore 
+  - `gitignore filename`
 - ~~.git/hooks~~
 
 ## GitHub
 
 - Pull requests
+  - Requests for code to be reviewed so that they 
+    - can verify if they are ready to merge
 - SSH authentication to repositories
+  - Public ssh key on local system is put into github settings 
 - ~~Actions~~
 
