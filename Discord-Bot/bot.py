@@ -48,7 +48,7 @@ async def on_message(message):
     botty_quotes = [
             'Please leave me alone.',
             'I am botty the bot. Who are you?',
-            'Why are you asking?'
+            'Why are you asking?',
     ]
 
     if message.content == 'towel!':
