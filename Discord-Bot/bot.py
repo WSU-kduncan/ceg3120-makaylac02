@@ -45,11 +45,19 @@ async def on_message(message):
         'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
     ]
 
+<<<<<<< HEAD
     botty_quotes = [
             'Please leave me alone.',
             'I am botty the bot. Who are you?',
             'Why are you asking?',
     ]
+=======
+     botty_quotes = [
+        'Please leave me alone.',
+        'I am botty the bot. Who are you?',
+        'Why are you asking?',
+    ] 
+>>>>>>> botUpdates
 
     if message.content == 'towel!':
         #response = random.choice(brooklyn_99_quotes)
