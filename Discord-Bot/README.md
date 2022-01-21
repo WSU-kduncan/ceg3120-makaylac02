@@ -1,4 +1,4 @@
-# R&D
+# R&D   - Makayla Carr
 
 ## Setup
 * How to get an API Token:
@@ -13,7 +13,7 @@
 * Describe what commands you can type in your discord server:
   * I added the !whoami command
 * What response will this from your bot?
-  * The bot will either say 'I am botty the bot. Who are you?' or, 'Why are you asking?'
+  * The bot will either say 'I am botty the bot. Who are you?' or, 'Why are you asking?'or, 'Please leave me alone.'
 
 ## Research 
 * Research some possible solutions to keep the bot running, and discuss why you would think this would work.
