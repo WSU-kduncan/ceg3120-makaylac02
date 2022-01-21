@@ -45,13 +45,19 @@ async def on_message(message):
         'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
     ]
 
+    botty_quotes = [
+            'Please leave me alone.',
+            'I am botty the bot. Who are you?'
+            'Why are you asking?'
+    ]
+
     if message.content == 'towel!':
         #response = random.choice(brooklyn_99_quotes)
         response = random.choice(hitchhiker_quotes)
         await message.channel.send(response)
 
     if message.content == '!whoami':
-        response = 'I am botty the bot. Who are you?'
+        response = random.choice(botty_quotes)
         await message.channel.send(response)
         
 
