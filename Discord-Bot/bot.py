@@ -50,4 +50,9 @@ async def on_message(message):
         response = random.choice(hitchhiker_quotes)
         await message.channel.send(response)
 
+    if message.content == '!whoami':
+        response = 'I am botty the bot. Who are you?'
+        await message.channel.send(response)
+        
+
 client.run(TOKEN)
