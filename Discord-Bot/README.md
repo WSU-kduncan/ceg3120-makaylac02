@@ -19,3 +19,7 @@
 * Research some possible solutions to keep the bot running, and discuss why you would think this would work.
   * I believe one solution could be a raspberry pi. They're basically mini computers that can run 24/7 without using too many resours
   * Another solution might just be to buy a server. Kind of like in Minecraft, if you want to have a server running 24/7, you'd have to buy, or rent a server. You could do this for your bot, so that it can continue to run. 
+
+
+# Proof Of Bot
+
