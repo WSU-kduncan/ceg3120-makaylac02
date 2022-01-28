@@ -22,4 +22,5 @@
 
 
 # Proof Of Bot
+![Proof of bot](discordproof.PNG)
 
