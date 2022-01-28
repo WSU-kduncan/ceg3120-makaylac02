@@ -22,5 +22,5 @@
 
 
 # Proof Of Bot
-![Proof of bot](discordproof.PNG)
+![discordproof](https://user-images.githubusercontent.com/89802396/151625831-98eacb4f-be33-4ee2-bdb8-1d31616de324.PNG)
 
