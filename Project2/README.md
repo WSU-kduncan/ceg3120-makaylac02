@@ -1,7 +1,7 @@
 #Name: Makayla Carr
 
 ## Step 1:
-![Step1](/home/makaylac/CEG3120/ceg3120-makaylac02/Project2/screenshotCompilation/Step1.PNG)
+![Step1](https://github.com/makaylac02/Project2/blob/main/Step1.PNG?raw=true)
 
 ## Step 2:
 
