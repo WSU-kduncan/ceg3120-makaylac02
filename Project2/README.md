@@ -1,7 +1,7 @@
 #Name: Makayla Carr
 
 ## Step 1:
-![Step1](ceg3120-makaylac02/Project2/screenshotCompilation/Step1.PNG?raw=true "Step 1")
+![Step1](screenshotCompilation/Step1.PNG?raw=true "Step 1")
 
 ## Step 2:
 
