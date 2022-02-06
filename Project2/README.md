@@ -25,7 +25,7 @@
 
 ### Step 1:
 * I selected the Amazon Linux 2 AMI and t2 micro instance. Screenshots are added.
-![InstanceSelected] (screenshotCompilation/instanceselected.PNG?raw=true "Instance Selected")
-![AMIselected] (screenshotCompilation/AMISELECTED.PNG?raw=true "AMI Selected")
+![InstanceSelected](screenshotCompilation/instanceselected.PNG?raw=true "Instance Selected")
+![AMIselected](screenshotCompilation/AMISELECTED.PNG?raw=true "AMI Selected")
 
 
