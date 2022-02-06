@@ -1,6 +1,6 @@
-## Name: Makayla Carr
+### Name: Makayla Carr
 
-# Part One:
+## Part One:
 ### Step 1: VPC Creation.
 * An Amazon VPC is a virtural private cloud 
 ![Step1](screenshotCompilation/Step1.PNG?raw=true "Step 1")
@@ -21,6 +21,11 @@
 * A security group is like a virtual firewall.
 ![Step5](screenshotCompilation/Step5.PNG?raw=true "Step 5")
 
+## Part Two:
 
+### Step 1:
+* I selected the Amazon Linux 2 AMI and t2 micro instance. Screenshots are added.
+![InstanceSelected] (screenshotCompilation/instanceselected.PNG?raw=true "Instance Selected")
+![AMIselected] (screenshotCompilation/AMISELECTED.PNG?raw=true "AMI Selected")
 
 
