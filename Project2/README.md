@@ -49,4 +49,8 @@
 * I added a security group during the creation of the instance, on the Congifure Security Group step. I chose to select an existing security group and added mine, CARR-sg.
 ![Part2Step6](screenshotCompilation/Part2Step6.PNG?raw=true "Part 2 Step 6")
 
-### Step 7: 
+### SSH:
+* I changed the hostname using a command I found in a google search. 
+  * The command: sudo hostnamectl set-hostname --static amazon-linux-2
+  * The website: https://bangmetric.com/changing-hostname-of-an-aws-ec2-instance-linux/
+![SSH](screenshotCompilation/SSH.PNG?raw=true "SSH") 
