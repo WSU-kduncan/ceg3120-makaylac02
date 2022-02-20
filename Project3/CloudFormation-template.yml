@@ -18,7 +18,7 @@ Mappings:
   AWSInstanceType2Arch:  # Supported architectures (x64bit only)
     t2.micro:
       Arch: HVM64
-  AWSRegionUbuntu: # AMI for Ubuntu server in each supported region 
+  AWSRegionUbuntu:   # AMI for Ubuntu server in each supported region 
     us-east-1:   # N. Virginia
       PV64: NOT_SUPPORTED
       HVM64: ami-07d0cf3af28718ef8
@@ -27,19 +27,19 @@ Resources:
   VPC:
     Type: 'AWS::EC2::VPC'
     Properties:
-      CidrBlock: 10.0.0.0/16
-      Tags:
+      CidrBlock: 10.0.0.0/24
+      Tags: 
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Name
+        - Key: CARR-CF-VPC
           Value: CEG2350 VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref VPC
-      CidrBlock: 10.0.0.0/24
-      Tags:
-        - Key: Application
+      CidrBlock: 10.0.0.0/28
+      Tags: 
+        - Key: CARR-CF-SUBNET
           Value: !Ref 'AWS::StackId'
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
@@ -95,10 +95,10 @@ Resources:
           FromPort: '-1'
           ToPort: '-1'
           CidrIp: 10.0.0.0/24
-        - IpProtocol: tcp
+        - IpProtocol: tcp   # home
           FromPort: '1'
           ToPort: '65535'
-          CidrIp: 0.0.0.0/0
+          CidrIp: 75.186.82.63/32
   PublicUbuntuInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
@@ -115,7 +115,7 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Name
+        - Key: CARR-CF-INSTANCE
           Value: CEG2350 Ubuntu
       NetworkInterfaces:
         - GroupSet:
@@ -124,13 +124,17 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.25
+          PrivateIpAddress: 10.0.0.25/28
       UserData:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
+            sudo hostnamectl set-hostname --static project3Stack \
             apt-get update && \
             apt-get install -y \
+            apt-get install python3.7 \
+            apt-get install python3-pip \
+            apt-get install git \
               git \
               htop \
               sl && \
