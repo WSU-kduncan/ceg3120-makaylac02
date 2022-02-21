@@ -21,7 +21,7 @@ Mappings:
   AWSRegionUbuntu:   # AMI for Ubuntu server in each supported region 
     us-east-1:   # N. Virginia
       PV64: NOT_SUPPORTED
-      HVM64: ami-07d0cf3af28718ef8
+      HVM64: ami-033b95fb8079dc481
       HVMG2: NOT_SUPPORTED
 Resources:
   VPC:
@@ -31,16 +31,16 @@ Resources:
       Tags: 
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: CARR-CF-VPC
-          Value: CEG2350 VPC
+        - Key: Name
+          Value: CARR-CF-VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
     Properties:
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/28
       Tags: 
-        - Key: CARR-CF-SUBNET
-          Value: !Ref 'AWS::StackId'
+        - Key: Application
+          Value: CARR-CF-SUBNET
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
     Properties:
@@ -115,8 +115,8 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: CARR-CF-INSTANCE
-          Value: CEG2350 Ubuntu
+        - Key: Name
+          Value: CARR-CF-INSTANCE
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
