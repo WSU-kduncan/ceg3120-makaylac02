@@ -19,9 +19,9 @@
 - Files modified: 
 - Configs set: 
 - Where site content files were located and why:
-- How to restart the service after a config change:
+- How to restart the service after a config change: sudo systemctl start apache2
 - Resources used:
-  -
+  - https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
 
 
 
