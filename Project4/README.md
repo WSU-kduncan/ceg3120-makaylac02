@@ -1,6 +1,7 @@
 # Part 2
+### Setup
 - Screenshot of host setup;
- - ![hostsetup](screenshots/host.PNG?raw=true "Host Setup") 
+  ![hostsetup](screenshots/host.PNG?raw=true "Host Setup") 
 - To switch between the 2 instances, I added my private key to the proxy server and was then able to use the key to ssh into webserv1 and webserv2
  - Commands for ssh: 
    - webserv1: ssh -i ceg2350.pem ubuntu@10.0.1.10
