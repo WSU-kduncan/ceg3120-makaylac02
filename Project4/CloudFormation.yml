@@ -140,7 +140,7 @@ Resources:
         - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
-          CidrIp: 108.222.118.252/32
+          CidrIp: 75.186.82.63/32
         - IpProtocol: tcp  # TODO Need more rules for port 80 access
           FromPort: '80'
           ToPort: '80'
