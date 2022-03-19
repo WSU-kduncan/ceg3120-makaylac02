@@ -18,8 +18,22 @@
 
 ### Webserver 1 and 2 Configs
 - Files modified: 
+  - Had to adjust firewalls: sudo ufw allow 'Apache'
 - Configs set: 
+  - Config block:
+    - This is used from the website I linked as a resource:
+    - <VirtualHost *:80>
+    ServerAdmin carr.137@wright.edu
+    ServerName webserver1 
+    ServerAlias www.webserver1
+    DocumentRoot /var/www/webserver1
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+   </VirtualHost>
+   - Repeated for server2
 - Where site content files were located and why:
+  - We store the content of the files on a virtural host so we can host more than one domain. The domain will hold our information.  
+  - Command to edit: sudo nano /var/www/your_domain/index.html
 - How to restart the service after a config change: sudo systemctl start apache2
 - Resources used:
   - https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
