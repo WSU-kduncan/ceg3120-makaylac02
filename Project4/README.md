@@ -1,6 +1,8 @@
+### Name: Makayla Carr
+### Email: carr.137@wright.edu
 ## Part 1 - Cloud Formation Template
 
-## Part 2 - Makayla Carr
+## Part 2 - Load Balancing 
 ### Setup
 - Screenshot of host setup;
 - ![hostsetup](screenshots/host.PNG?raw=true "Host Setup") 
