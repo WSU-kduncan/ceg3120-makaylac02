@@ -1,4 +1,6 @@
-# Part 2
+## Part 1 - Cloud Formation Template
+
+## Part 2 - Makayla Carr
 ### Setup
 - Screenshot of host setup;
 - ![hostsetup](screenshots/host.PNG?raw=true "Host Setup") 
@@ -34,7 +36,8 @@
 - Where site content files were located and why:
   - We store the content of the files on a virtural host so we can host more than one domain. The domain will hold our information.  
   - Command to edit: sudo nano /var/www/your_domain/index.html
-- How to restart the service after a config change: sudo systemctl start apache2
+- How to restart the service after a config change:
+  - sudo systemctl start apache2
 - Resources used:
   - https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
 
